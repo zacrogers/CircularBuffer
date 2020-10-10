@@ -14,7 +14,7 @@ struct circular_buffer
 	bool full;
 };
 
-typedef circular_buffer* cbuff_handle;
+typedef struct circular_buffer* cbuff_handle;
 
 cbuff_handle cbuff_init(uint16_t* buffer, size_t size);
 bool         cbuff_full(cbuff_handle circ_buff);
